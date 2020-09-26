@@ -13,15 +13,15 @@ class PrepareForTextureingMainPanel(bpy.types.Panel):
         layout = self.layout
         
         row = layout.row()
-        row.label(text= "Press Apply Object Scale to begin.")
+        row.label(text= "Apply Scale")
         row.operator('apply.scale_operator')
         
         row = layout.row()
-        row.label(text= "Press Set Orgin To Geomotry to continue")
+        row.label(text= "Orgin To Geomotry")
         row.operator('orgin.geometry_operator')
         
         row = layout.row()
-        row.label(text= "Press Smart UV Unwrap To Finish")
+        row.label(text= "Smart UV Unwrap")
         row.operator('uv.smart_operator')
         
         
