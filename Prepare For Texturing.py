@@ -1,4 +1,4 @@
-import bpy
+eimport bpy
 
 #Prepare for texturing main panel
 
@@ -17,11 +17,11 @@ class PrepareForTextureingMainPanel(bpy.types.Panel):
         row.operator('apply.scale_operator')
         
         row = layout.row()
-        row.label(text= "Orgin To Geomotry")
+        row.label(text= "Fix Orgin")
         row.operator('orgin.geometry_operator')
         
         row = layout.row()
-        row.label(text= "Smart UV Unwrap")
+        row.label(text= "UV Unwrap")
         row.operator('uv.smart_operator')
         
         
